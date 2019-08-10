@@ -1,0 +1,41 @@
+{
+    "name": "ttml",
+    "displayName": ".ttml",
+    "description": "抖音小程序ttml代码提示",
+    "version": "0.0.3",
+    "icon": "images/ttapp.png",
+    "publisher":"tinolee",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "抖音",
+        "ttml"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ttml",
+            "aliases": ["ttml", "ttml"],
+            "extensions": [".ttml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ttml",
+            "scopeName": "text.html.ttml",
+            "path": "./syntaxes/ttml.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "ttml",
+                "path": "./snippets/ttml.json"
+            }
+        ]
+    }
+}
