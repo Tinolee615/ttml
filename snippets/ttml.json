@@ -2,7 +2,7 @@
   "view": {
     "prefix": "view",
     "body": [
-    "<view>",
+    "<view class=\"$1\">",
     "\t",
     "</view>"
     ],
