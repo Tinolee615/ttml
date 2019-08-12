@@ -1,18 +1,18 @@
 # 抖音小程序 ttml
 
-为 VSCode 提供 ttml 语法支持及代码片段
+使VSCode 编写 ttml 语法支持及代码片段
 
 ## 安装
 
-1. 打开编辑器，`Ctrl + Shift + X`，搜索 **ttml**。
-2. 点击 `install`
+1. 编辑器Extensions搜索 **ttml**。
+2. 点击安装
 
-## 使用
+## 使用方法
 
 键入关键词，然后回车。关键词不区分大小写
 
 
-#### 代码示例
+#### 示例
 
 - view
 
@@ -37,7 +37,4 @@
     ```html
     tt:for="{{items}}"
     ```
-...more
-
-
-**Enjoy!​​**
+...
