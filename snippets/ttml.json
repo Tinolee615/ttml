@@ -1,10 +1,18 @@
 {
-  "view": {
+  "view-warp": {
     "prefix": "view",
     "body": [
     "<view class=\"$1\">",
     "\t",
     "</view>"
+    ],
+    "description": "视图容器",
+    "scope": "source.scheme"
+  },
+  "view": {
+    "prefix": "view",
+    "body": [
+    "<view class=\"$1\"></view>"
     ],
     "description": "视图容器",
     "scope": "source.scheme"
@@ -57,7 +65,7 @@
   },
   "button": {
     "prefix": "button",
-    "body": "<button type=\"${1:default}\" size=\"${2:defaultSize}\" loading=\"${3:loading}\" disabled=\"${5:disabled}\" hover-class=\"${6:other-button-hover}\"> Button </button>",
+    "body": "<button type=\"${1:default}\" hover-class=\"${2:other-button-hover}\"></button>",
     "description": "按钮"
   },
   "checkbox-group": {
