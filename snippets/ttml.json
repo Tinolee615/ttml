@@ -99,7 +99,7 @@
   },
   "input": {
     "prefix": "input",
-    "body": "<input type=\"$1\" placeholder=\"$2\" ${3:focus} ${4:password} />$5",
+    "body": "<input type=\"${1:text}\" placeholder=\"$2\"/>",
     "description": "自动聚焦的input"
   },
   "label": {
