@@ -29,10 +29,10 @@
   "swiper": {
     "prefix": "swiper",
     "body": [
-      "<swiper indicator-dots=\"{{${1:indicatorDots}}}\" autoplay=\"{{${2:autoplay}}}\" interval=\"{{${3:interval}}}\" duration=\"{{${4:duration}}}\">",
+      "<swiper indicator-dots=\"{{${1:true}}}\" autoplay=\"{{${2:true}}}\" interval=\"{{${3:5000}}}\" duration=\"{{${4:500}}}\">",
       "\t<block tt:for=\"{{${5:imgUrls}}}\">",
       "\t\t<swiper-item>",
-      "\t\t\t<image src=\"{{${6:item}}}\" class=\"slide-image\" />",
+      "\t\t\t<image :src=\"{{${6:item}}}\" class=\"slide-image\" />",
       "\t\t</swiper-item>",
       "\t</block>",
       "</swiper>$7"
@@ -72,8 +72,8 @@
     "prefix": "checkboxGroup",
     "body": [
       "<checkbox-group>",
-      "\t<label tt:for=\"{{${1:item}}}\" tt:key=\"{{${1:item}${2:value}}}\">",
-      "\t\t<checkbox value=\"${1:item}.${3:name}\" />{{${1:item}.${4:value}}}",
+      "\t<label tt:for=\"{{$1}}\" tt:key=\"{{$2}}\">",
+      "\t\t<checkbox value=\"$3\" />$4",
       "\t</label>",
       "</checkbox-group>$5"
     ],
@@ -83,9 +83,9 @@
     "prefix": "radioGroup",
     "body": [
       "<radio-group>",
-      "\t<label class=\"$1\" :for=\"{{${2:item}}}\">",
+      "\t<label class=\"$1\" :for=\"$2\">",
       "\t\t<view class=\"\">",
-      "\t\t\t<radio value=\"${2:item}.${3:name}\" checked=\"{{${2:item}.${4:checked}}}\" />{{${2:item}.${5:value}}}",
+      "\t\t\t<radio value=\"$3\" checked=\"$4}}\" />$5",
       "\t\t</view>",
       "\t</label>",
       "</radio-group>$6"
@@ -152,10 +152,10 @@
     "prefix": "actionSheet",
     "body": [
       "<action-sheet>",
-      "\t<block tt:for=\"{{${1:actionSheetItems}}}\">",
-      "\t\t<action-sheet-item class=\"item\" data-name=\"{{${2:item}}}\" />{{${2:item}}}</action-sheet-item>",
+      "\t<block tt:for=\"$1\">",
+      "\t\t<action-sheet-item class=\"item\" data-name=\"$2\" />$3</action-sheet-item>",
       "\t</block>",
-      "</action-sheet>$3"
+      "</action-sheet>$4"
     ],
     "description": "从屏幕底部出现的菜单表"
   },
@@ -211,12 +211,12 @@
   },
   "tt:if": {
     "prefix": "ttif",
-    "body": "tt:if=\"{{condition}}\"",
+    "body": "tt:if=\"$1\"",
     "description": "条件渲染if"
   },
   "tt:elif": {
     "prefix": "ttelif",
-    "body": "tt:elif=\"{{condition}}\"",
+    "body": "tt:elif=\"$1\"",
     "description": "条件渲染else if"
   },
   "class": {
@@ -261,7 +261,7 @@
   },
   "bindtap": {
     "prefix": "bindtap",
-    "body": "bindtap=\"${1:tapname}\"",
+    "body": "bindtap=\"$1\"",
     "description": "绑定事件"
   },
   "template": {
