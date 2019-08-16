@@ -99,7 +99,7 @@
   },
   "input": {
     "prefix": "input",
-    "body": "<input type=\"${1:text}\" placeholder=\"$2\"/>",
+    "body": "<input type=\"${1:text}\" value=\"$2\" placeholder=\"$3\"/>",
     "description": "自动聚焦的input"
   },
   "label": {
@@ -110,14 +110,21 @@
   "picker-time": {
     "prefix": "pickerTime",
     "body": [
-      "<picker mode=\"time\" start=\"${1:xx:xx}\" end=\"${2:xx:xx}\">$3</picker>$4"
+      "<picker mode=\"time\" value=\"$1\" start=\"${2:xx:xx}\" end=\"${3:xx:xx}\">$4</picker>$5"
     ],
     "description": "时间选择器"
   },
   "picker-date": {
     "prefix": "pickerDate",
     "body": [
-      "<picker mode=\"date\" start=\"${1:xxxx-xx-xx}\" end=\"${2:xxxx-xx-xx}\">$3</picker>$4"
+      "<picker mode=\"date\" value=\"$1\" start=\"${2:xxxx-xx-xx}\" end=\"${3:xxxx-xx-xx}\">$4</picker>$5"
+    ],
+    "description": "日期选择器"
+  },
+  "picker-region": {
+    "prefix": "pickerRegion",
+    "body": [
+      "<picker mode=\"region\" value=\"$1\" bindchange=\"$2\" bindcancel=\"$3\">$4</picker>$5"
     ],
     "description": "日期选择器"
   },
@@ -229,6 +236,26 @@
     "body": "id=\"$1\"",
     "description": "ID名"
   },
+  "bindinput": {
+    "prefix": "bindinput",
+    "body": "bindinput=\"$1\"",
+    "description": "input框键盘输入触发"
+  },
+  "bindfocus": {
+    "prefix": "bindfocus",
+    "body": "bindfocus=\"$1\"",
+    "description": "input框键盘聚焦触发"
+  },
+  "bindblur": {
+    "prefix": "bindblur",
+    "body": "bindblur=\"$1\"",
+    "description": "input框键盘失去聚焦触发"
+  },
+  "bindconfirm": {
+    "prefix": "bindconfirm",
+    "body": "bindconfirm=\"$1\"",
+    "description": "input框点击键盘完成触发"
+  },
   "url": {
     "prefix": "url",
     "body": "url=\"$1\"",
@@ -243,6 +270,11 @@
     "prefix": "placeholder",
     "body": "placeholder=\"$1\"",
     "description": "placeholder提示"
+  },
+  "disabled": {
+    "prefix": "disabled",
+    "body": "disabled=\"${1:false}\"",
+    "description": "disabled禁用"
   },
   "catchsubmit": {
     "prefix": "catchsubmit",
