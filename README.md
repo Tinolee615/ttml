@@ -2,6 +2,10 @@
 
 使VSCode 编写 ttml 语法支持及代码片段
 
+## github地址
+
+[https://github.com/Tinolee615/ttml]('https://github.com/Tinolee615/ttml')
+
 ## 安装
 
 1. 编辑器Extensions搜索 **ttml**。

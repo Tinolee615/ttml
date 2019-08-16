@@ -2,7 +2,7 @@
     "name": "ttml",
     "displayName": ".ttml",
     "description": "抖音小程序ttml代码提示",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "icon": "images/ttapp.png",
     "publisher":"tinolee",
     "engines": {
@@ -13,7 +13,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/Tinolee615/ttml"
     },
     "keywords": [
         "抖音",
